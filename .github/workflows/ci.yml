@@ -21,7 +21,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: github
+          java-version: '17' 
+          server-id: github
       - name: Build & Deploy
         run:
           mvn -B deploy
